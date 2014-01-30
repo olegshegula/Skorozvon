@@ -62,7 +62,7 @@ public class BaseTest {
 
 		public static void CaptureScreenshot(String fileName) throws IOException {
 
-			// System.out.println("path " + path);
+			 System.out.println("path " + path);
 
 			try {
 
