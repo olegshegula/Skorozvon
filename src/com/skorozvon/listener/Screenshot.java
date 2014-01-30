@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
-import com.skorozvon.pages.BaseTest;
+import com.skorozvon.tests.BaseTest;
 
 
 

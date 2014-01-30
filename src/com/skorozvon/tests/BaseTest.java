@@ -1,4 +1,4 @@
-package com.skorozvon.pages;
+package com.skorozvon.tests;
 
 import java.io.File;
 import java.io.IOException;
