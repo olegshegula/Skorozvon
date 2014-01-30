@@ -6,7 +6,9 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
-import com.skorozvon.util.BaseTest;
+import com.skorozvon.pages.BaseTest;
+
+
 
 //This class help to make screenshots of tests
 public class Screenshot extends TestListenerAdapter {
