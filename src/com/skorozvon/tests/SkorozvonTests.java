@@ -3,13 +3,13 @@
  */
 package com.skorozvon.tests;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.skorozvon.core.SelTestCase;
 import com.skorozvon.data.RegistrationData;
 import com.skorozvon.pages.LoginPage;
+import com.skorozvon.pages.Page;
 
 
 /**
@@ -22,6 +22,7 @@ public class SkorozvonTests extends SelTestCase {
 	@Test(dataProvider = "registrationCSVData", dataProviderClass = RegistrationData.class)
 	public void testCreateContact(RegistrationData registrationData) throws Throwable {
 
+		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 				
 		loginPage.enterEmail("stqa.gm@gmail.com");

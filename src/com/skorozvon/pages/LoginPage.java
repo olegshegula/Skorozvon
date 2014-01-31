@@ -6,10 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class LoginPage extends Page {
+public class LoginPage  {
 	
+	private WebDriver driver;
+
+
 	public LoginPage(WebDriver driver) {
-		super(driver);		
+		this.driver = driver;
 	}
 
 	@FindBy(id = "email")

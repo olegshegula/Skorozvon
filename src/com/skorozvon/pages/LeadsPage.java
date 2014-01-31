@@ -5,10 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LeadsPage extends Page {
+public class LeadsPage  {
+
+	private WebDriver driver;
+
+
 
 	public LeadsPage(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 		// TODO Auto-generated constructor stub
 	}
 	

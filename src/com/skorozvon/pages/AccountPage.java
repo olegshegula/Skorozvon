@@ -11,10 +11,12 @@ import org.openqa.selenium.support.PageFactory;
  * @author shcegula-os
  *
  */
-public class AccountPage extends Page {
+public class AccountPage  {
+
+	private WebDriver driver;
 
 	public AccountPage(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 		// TODO Auto-generated constructor stub
 	}
 	

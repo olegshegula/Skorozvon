@@ -15,10 +15,12 @@ import com.skorozvon.data.RegistrationData;
  * @author shcegula-os
  * 
  */
-public class CreateContactPage extends Page {
+public class CreateContactPage{
+
+	private WebDriver driver;
 
 	public CreateContactPage(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 		// TODO Auto-generated constructor stub
 	}
 
