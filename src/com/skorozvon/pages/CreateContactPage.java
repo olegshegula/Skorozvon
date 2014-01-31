@@ -9,6 +9,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.skorozvon.data.RegistrationData;
 
 /**
  * @author shcegula-os
@@ -101,6 +102,17 @@ public class CreateContactPage extends Page {
 	public AccountPage clickSave() {
 		savebutton.click();
 		return PageFactory.initElements(driver, AccountPage.class);
+
+	}
+	
+	public AccountPage createNewContact(RegistrationData registrationData) {
+		return enterName(registrationData.getName())
+				.enterCity(registrationData.getCity())
+				.enterPost(registrationData.getPost())
+				.enterPhone(registrationData.getPhone())
+				.enterEmail(registrationData.getEmail())
+				.enterComment(registrationData.getComment())
+				.clickSave();
 
 	}
 }
