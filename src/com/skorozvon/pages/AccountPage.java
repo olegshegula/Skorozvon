@@ -24,10 +24,6 @@ public class AccountPage extends Page {
 	/* (non-Javadoc)
 	 * @see com.skorozvon.pages.Page#open()
 	 */
-	@Override
-	public void open() {
-		// TODO Auto-generated method stub
-	}
 	
 	public boolean isPageOpened() {
 		return leads.isDisplayed();

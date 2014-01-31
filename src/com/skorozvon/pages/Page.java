@@ -17,6 +17,6 @@ public abstract class Page {
 		this.driver = driver;
 	}
 	
-public abstract void open();	
+//public abstract void open();	
 
 }

@@ -16,12 +16,7 @@ public class LeadsPage extends Page {
 	private WebElement addcontact;
 	
 
-	@Override
-	public void open() {
-		// TODO Auto-generated method stub
-
-	}
-	
+		
 	public boolean isPageOpened() {
 		return addcontact.isDisplayed();
 	}

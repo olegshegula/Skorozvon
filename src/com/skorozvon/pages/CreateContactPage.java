@@ -59,11 +59,7 @@ public class CreateContactPage extends Page {
 	 * 
 	 * @see com.skorozvon.pages.Page#open()
 	 */
-	@Override
-	public void open() {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 	public boolean isPageOpened() {
 		return popupwindow.isDisplayed();

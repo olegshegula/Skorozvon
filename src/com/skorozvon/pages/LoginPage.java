@@ -37,9 +37,5 @@ public class LoginPage extends Page {
 		return PageFactory.initElements(driver, AccountPage.class);
 	}
 
-	@Override
-	public void open() {
-		driver.get("http://http://91.232.196.109");
-		
-	}
+	
 }
