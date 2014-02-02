@@ -9,18 +9,17 @@ import org.testng.annotations.Test;
 import com.skorozvon.core.SelTestCase;
 import com.skorozvon.data.RegistrationData;
 import com.skorozvon.pages.LoginPage;
-import com.skorozvon.pages.Page;
-
 
 /**
  * @author Oleg
  *
  */
+
 @Listeners(com.skorozvon.listener.Screenshot.class)
 public class SkorozvonTests extends SelTestCase {
 	
 	@Test(dataProvider = "registrationCSVData", dataProviderClass = RegistrationData.class)
-	public void testCreateContact(RegistrationData registrationData) throws Throwable {
+	public void testCreateContact(RegistrationData registrationData)  {
 
 		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
