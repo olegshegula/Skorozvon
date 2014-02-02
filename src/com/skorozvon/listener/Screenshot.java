@@ -12,10 +12,12 @@ import com.skorozvon.core.BaseTest;
 
 
 
-//This class help to make screenshots of tests
+//This class can help to make screenshots of tests
+
 public class Screenshot extends TestListenerAdapter {
 	
 		//this method will be called after test will failure
+	
 	@Override
 	public void onTestFailure(ITestResult result) {
 

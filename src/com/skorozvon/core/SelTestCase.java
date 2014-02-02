@@ -18,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -42,7 +43,7 @@ public class SelTestCase {
 	 * setEnv(@Optional("http://91.232.196.109") String appURL) { this.appURL =
 	 * appURL; }
 	 */
-	@BeforeMethod
+	@BeforeTest
 	public void SetUp() {
 		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
@@ -67,7 +68,7 @@ public class SelTestCase {
 	 * 
 	 * } }
 	 */
-	@AfterMethod
+	@AfterTest
 	public void tearDown() {
 
 		driver.close();
